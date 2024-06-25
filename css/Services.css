@@ -8,7 +8,6 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.5));
 }
 
-/*Banner*****************************************************************/
 .banner {
   width: 100%;
   height: fit-content;
@@ -52,11 +51,9 @@ body {
   transition: 0.5s;
 }
 
-.navbar ul li a:hover:after {
+.navbar ul li a:hover::after {
   width: 100%;
 }
-
-/*startscreen*****************************************************************/
 
 .content {
   width: 100%;
@@ -77,11 +74,6 @@ body {
   line-height: 25px;
 }
 
-/*tabs*****************************************************************/
-
-/*About Projects Contact tabs eigenschappen*/
-
-/*Title in de block*/
 h1 {
   font-family: sans-serif;
   text-align: center;
@@ -89,7 +81,6 @@ h1 {
   color: white;
 }
 
-/*Title in de block*/
 h2 {
   margin-top: 5%;
   margin-bottom: 3%;
@@ -99,7 +90,6 @@ h2 {
   color: white;
 }
 
-/*text in de block*/
 p {
   font-family: sans-serif;
   text-align: center;
@@ -114,7 +104,6 @@ li {
   color: white;
 }
 
-/*Bodem*/
 footer {
   background-color: black;
   color: white;
@@ -122,25 +111,70 @@ footer {
   text-align: center;
 }
 
-/*Bodem content*/
 .footer-content {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/*Bodem tekst*/
 .footer-content p {
   margin: 5px 0;
 }
 
-/*Bodem socialmedia links*/
 .social-media-links a {
   margin: 0 10px;
   color: white;
   text-decoration: none;
 }
 
-/*Bodem socialmedia links (hover)*/
 .social-media-links a:hover {
   text-decoration: underline;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.block {
+  margin: 5%;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+              rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+              rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.block h1 {
+  color: black;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.block p {
+  color: black;
+  font-size: medium;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 10px;
+}
+
+.block img {
+  width: 100%;
+}
+
+/* Specific styles for each block */
+.project-container .block:nth-child(1) {
+
+}
+
+
+.project-container .block:nth-child(2) {
+}
+
+.project-container .block:nth-child(3) {
 }
